@@ -4,8 +4,9 @@
     "description": "Second Scene for three.js",
     "main": "app.js",
     "scripts": {
-        "dev": "npm run watch & npm run serve",
-        "watch": "watchify -p [browserify-livereload --host 127.0.0.1 --port 1337] ./First_Scene/app.js -o bundle.js --verbose",
+        "dev": "npm run watch",
+        "bundle": "browserify ./First_Scene/app.js -o output.js",
+        "watch-reload": "watchify -p [browserify-livereload --host 127.0.0.1 --port 1337] ./First_Scene/app.js -o /bundle.js --verbose",
         "serve": "http-server -o",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
