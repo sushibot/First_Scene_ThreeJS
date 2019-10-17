@@ -1,0 +1,32 @@
+{
+    "name": "first_scene",
+    "version": "1.0.0",
+    "description": "Second Scene for three.js",
+    "main": "app.js",
+    "scripts": {
+        "dev": "npm run watch & npm run serve",
+        "watch": "watchify -p [browserify-livereload --host 127.0.0.1 --port 1337] ./First_Scene/app.js -o bundle.js --verbose",
+        "serve": "http-server -o",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sushibot/First_Scene_ThreeJS.git"
+    },
+    "author": "Gabriel Fontanilla",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/sushibot/First_Scene_ThreeJS/issues"
+    },
+    "homepage": "https://github.com/sushibot/First_Scene_ThreeJS#readme",
+    "devDependencies": {
+        "browserify": "^16.5.0",
+        "eslint": "^6.5.1",
+        "http-server": "^0.11.1",
+        "three": "^0.109.0",
+        "watchify": "^3.11.1"
+    },
+    "dependencies": {
+        "browserify-livereload": "^1.0.10"
+    }
+}
